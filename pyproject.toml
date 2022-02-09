@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "deep-raman"
+version = "0.1.0"
+description = ""
+authors = ["Thunder Shiviah <thunder.shiviah+deep.raman@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tensorflow = "^2.8.0"
+scikit-learn = "^1.0.2"
+scikit-image = "^0.19.1"
+plotly = "^5.5.0"
+streamlit = "^1.5.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
