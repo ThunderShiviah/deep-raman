@@ -74,13 +74,15 @@ def main(num_epochs: int, loss_function: Callable):
 if __name__ == "__main__":
 
     loss_options = {
-        "mean absolute error": keras.losses.mean_absolute_error,
         "peak signal to noise ratio": metrics.psnr_loss,
+         "mean absolute error": keras.losses.mean_absolute_error,
         "mean squared error": keras.losses.mean_squared_error,
     }
 
     NUM_EPOCHS = st.selectbox("Number of epochs", [10**i for i in range(0, 3)])
-    LOSS_FUNCTION = st.selectbox("Loss function", loss_options.keys())
+    loss_choice = st.selectbox("Loss function", loss_options.keys())
+
+    LOSS_FUNCTION = loss_options[loss_choice]
 
     sample_input, sample_prediction_, sample_target_ = main(NUM_EPOCHS, LOSS_FUNCTION)
 
