@@ -75,7 +75,7 @@ if __name__ == "__main__":
 
     loss_options = {
         "peak signal to noise ratio": metrics.psnr_loss,
-         "mean absolute error": keras.losses.mean_absolute_error,
+        "mean absolute error": keras.losses.mean_absolute_error,
         "mean squared error": keras.losses.mean_squared_error,
     }
 
