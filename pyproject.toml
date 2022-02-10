@@ -11,6 +11,7 @@ scikit-learn = "^1.0.2"
 scikit-image = "^0.18.3"
 plotly = "^5.5"
 streamlit = "^1.5"
+black = "^22.1.0"
 
 [tool.poetry.dev-dependencies]
 
